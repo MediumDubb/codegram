@@ -8,6 +8,9 @@
         </div>
         <div class="col-md-8 d-flex flex-column p-5">
             <div><h1>{{ $user->username}}</h1></div>
+            <div>
+                <a href="#">Add Post</a>
+            </div>
             <div class="d-flex">
                 <div class="pr-3">
                     posts: <strong>173</strong>
@@ -22,7 +25,7 @@
             <h2>{{$user->profile->title}}</h2>
             <p>{{ $user->profile->description }}</p>
             <div>
-                <a href="httpd://www.google.com">Google.com</a>
+                <a href="httpd://www.google.com">{{ $user->profile->url }}</a>
             </div>
         </div>
     </div>
